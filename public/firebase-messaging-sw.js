@@ -9,13 +9,13 @@ importScripts(
 );
 
 self.firebase.initializeApp({
-  apiKey: "AIzaSyBsCS2OyCyp08wNtX0yz8qAf6MZ0z8rvmM",
-  authDomain: "testbrowser-fa902.firebaseapp.com",
-  projectId: "testbrowser-fa902",
-  storageBucket: "testbrowser-fa902.appspot.com",
-  messagingSenderId: "95053086381",
-  appId: "1:95053086381:web:76ab2d499eb65da5cb1024",
-  measurementId: "G-Q6RD4Q4Q80",
+  apiKey: "123",
+  authDomain: "123",
+  projectId: "123",
+  storageBucket: "123",
+  messagingSenderId: "123",
+  appId: "123",
+  measurementId: "123",
   databaseURL: "https://white-web-cac.firebaseio.com",
 });
 

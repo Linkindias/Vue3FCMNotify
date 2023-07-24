@@ -1,36 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/messaging";
 
-// const getToken = () => {
-//   const messaging = firebase.messaging();
-//   messaging.getToken({vapidKey:"BBeTiinpshaBHmF5z1r5rKBBEqo2_xi9UPVR-W6X9y7hI1ctz1O3v51Tx-8XKVk4D0MzjMdbakDVo4UNRt34ojc"})
-//     .then((currentToken) => {
-//       if (currentToken) {
-//         console.log(currentToken);} 
-//       else {
-//         console.log("No registration token available. Request permission     to generate one.");}
-//       })
-//     .catch((err) => {
-//         console.log("An error occurred while retrieving token. ", err);
-//    });
-// };
-
-// const receiveMessage = () => {
-//   const messaging = firebase.messaging();
-//     messaging.onMessage((payload) => {
-//     console.log('message received.', payload);
-
-//     let notification = payload.notification;
-//     console.log("Notification: ", notification);
-//   });
-// }
-//   receiveMessage();
-//   console.log('receiveMessage');
-//   getToken();
-//   console.log('getToken');
 </script>
 
 <template>
