@@ -5,24 +5,40 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/fcmToken">Token</RouterLink>
-      </nav>
+  <div class="container">
+    <div>
+      <header>
+        <h1>Header</h1>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/fcmToken">Token</RouterLink>
+        </nav>
+      </header>
     </div>
-  </header>
-
-  <RouterView />
+    <div><RouterView /></div>
+  <div>
+    <footer>
+      <h1>footer</h1>
+    </footer>
+  </div>
+</div>
 </template>
 
 <style scoped>
+
+.container {
+       display: flex;
+       flex-direction: column; /* row | row-reverse | column | column-reverse */
+       flex-wrap: nowrap; /* nowrap | wrap | wrap-reverse */
+       justify-content: center; /* flex-start | flex-end | center | space-between | space-around */
+       align-items: flex-start; /* flex-start | flex-end | center | baseline | stretch */
+       align-content: center; /* flex-start | flex-end | center | space-between | space-around | stretch */ 
+}
+div {
+  border: 1px solid;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;

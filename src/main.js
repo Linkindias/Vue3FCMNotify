@@ -2,6 +2,9 @@ import "./assets/main.css";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";
+import { createI18n } from "vue-i18n";
+import zh from "./languages/zh.json";
+import en from "./languages/en.json";
 
 import App from "./App.vue";
 import router from "./router";
@@ -17,10 +20,21 @@ const firebaseConfig = {
   measurementId: "123",
 };
 firebase.initializeApp(firebaseConfig);
+const language = localStorage.getItem('locale') == undefined ? 'zh-TW' : localStorage.getItem('locale')
+console.log(language)
+const i18n = createI18n({
+  legacy: false,
+  locale: 'zh-TW',
+  fallbackLocale: 'zh-TW',
+  globalInjection: true,
+  messages: {
+    'zh-TW': zh,
+    'en-US': en
+  }
+})
 
 const app = createApp(App);
-
 app.use(createPinia());
 app.use(router);
-
+app.use(i18n)
 app.mount("#app");
