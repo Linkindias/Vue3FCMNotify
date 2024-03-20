@@ -22,6 +22,16 @@ const router = createRouter({
       name: "fcmToken",
       component: () => import("../views/TokenView.vue"),
     },
+    {
+      path: "/csrf",
+      name: "csrf",
+      component: () => import("../views/CsrfView.vue"),
+    },
+    {
+      path: "/ckeditor",
+      name: "ckeditor",
+      component: () => import("../views/CkeditorView.vue"),
+    },
   ],
 });
 

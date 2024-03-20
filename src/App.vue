@@ -13,28 +13,37 @@ import HelloWorld from './components/HelloWorld.vue'
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
           <RouterLink to="/fcmToken">Token</RouterLink>
+          <RouterLink to="/csrf">Csrf</RouterLink>
+          <RouterLink to="/ckeditor">Ckeditor</RouterLink>
         </nav>
       </header>
     </div>
-    <div><RouterView /></div>
-  <div>
-    <footer>
-      <h1>footer</h1>
-    </footer>
+    <div>
+      <RouterView />
+    </div>
+    <div>
+      <footer>
+        <h1>footer</h1>
+      </footer>
+    </div>
   </div>
-</div>
 </template>
 
 <style scoped>
-
 .container {
-       display: flex;
-       flex-direction: column; /* row | row-reverse | column | column-reverse */
-       flex-wrap: nowrap; /* nowrap | wrap | wrap-reverse */
-       justify-content: center; /* flex-start | flex-end | center | space-between | space-around */
-       align-items: flex-start; /* flex-start | flex-end | center | baseline | stretch */
-       align-content: center; /* flex-start | flex-end | center | space-between | space-around | stretch */ 
+  display: flex;
+  flex-direction: column;
+  /* row | row-reverse | column | column-reverse */
+  flex-wrap: nowrap;
+  /* nowrap | wrap | wrap-reverse */
+  justify-content: center;
+  /* flex-start | flex-end | center | space-between | space-around */
+  align-items: flex-start;
+  /* flex-start | flex-end | center | baseline | stretch */
+  align-content: center;
+  /* flex-start | flex-end | center | space-between | space-around | stretch */
 }
+
 div {
   border: 1px solid;
 }
@@ -99,5 +108,4 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
-</style>
+}</style>

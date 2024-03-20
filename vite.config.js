@@ -1,17 +1,21 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from "node:url";
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+// import svgLoader from "vite-svg-loader";
+import ckeditor5 from "@ckeditor/vite-plugin-ckeditor5";
 
 // https://vitejs.dev/config/
-export default defineConfig({  
+export default defineConfig({
   base: process.env.NODE_ENV === "development" ? "/" : "/vue3/",
   plugins: [
     vue(),
+    ckeditor5({ theme: require.resolve("@ckeditor/ckeditor5-theme-lark") }),
+    // svgLoader(),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
+});
