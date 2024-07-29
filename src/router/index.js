@@ -32,6 +32,11 @@ const router = createRouter({
       name: "ckeditor",
       component: () => import("../views/CkeditorView.vue"),
     },
+    {
+      path: "/print",
+      name: "print",
+      component: () => import("../views/PrintView.vue"),
+    },
   ],
 });
 

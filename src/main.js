@@ -6,6 +6,7 @@ import { createI18n } from "vue-i18n";
 import zh from "./languages/zh.json";
 import en from "./languages/en.json";
 import CKEditor from '@ckeditor/ckeditor5-vue';
+import print from 'vue3-print-nb'
 
 import App from "./App.vue";
 import router from "./router";
@@ -39,4 +40,5 @@ app.use(createPinia());
 app.use(router);
 app.use(i18n);
 app.use(CKEditor);
+app.use(print);
 app.mount("#app");

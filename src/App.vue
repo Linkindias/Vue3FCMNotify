@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <RouterLink to="/fcmToken">Token</RouterLink>
           <RouterLink to="/csrf">Csrf</RouterLink>
           <RouterLink to="/ckeditor">Ckeditor</RouterLink>
+          <RouterLink to="/print">Print</RouterLink>
         </nav>
       </header>
     </div>
