@@ -37,6 +37,11 @@ const router = createRouter({
       name: "print",
       component: () => import("../views/PrintView.vue"),
     },
+    {
+      path: "/bootstrap",
+      name: "bootstrap",
+      component: () => import("../views/Bootstrap.vue"),
+    },
   ],
 });
 

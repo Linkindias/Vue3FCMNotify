@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-fluid ">
     <div>
       <header>
         <h1>Header</h1>
@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
           <RouterLink to="/csrf">Csrf</RouterLink>
           <RouterLink to="/ckeditor">Ckeditor</RouterLink>
           <RouterLink to="/print">Print</RouterLink>
+          <RouterLink to="/bootstrap">Bootstrap</RouterLink>
         </nav>
       </header>
     </div>

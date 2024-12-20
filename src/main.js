@@ -37,6 +37,26 @@ const i18n = createI18n({
 
 const app = createApp(App);
 app.use(createPinia());
+
+router.beforeEach((to, from, next)=>{
+
+  const isLogin = localStorage.getItem('token');
+  const timeout = localStorage.getItem('time');
+
+  var hours = 12
+  var date = (new Date(timeout)).getTime() + (hours*60*60*100);
+  var now = new Date().getTime();
+
+  if( isLogin != null && date > now){
+    next();
+  } else {
+    // if( to.path !== '/login')
+    //   next('/login');
+    // else
+      next();
+  }
+});
+
 app.use(router);
 app.use(i18n);
 app.use(CKEditor);
